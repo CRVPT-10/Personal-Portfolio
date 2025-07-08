@@ -31,6 +31,8 @@ body {
   font-size: 1.5rem;
   color: #fff;
   margin-left: -90px; 
+  word-break: break-word;      /* allow wrapping */
+  max-width: 100%;    
 }
 
 .nav ul {
@@ -69,6 +71,15 @@ body {
 
   .toggle-mode {
     align-self: flex-start;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav h1 {
+    font-size: 1.2rem;
+    margin-left: 0;
+    word-break: break-word;
+    max-width: 90%;
   }
 }
 
@@ -260,6 +271,19 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 /* Education Timeline */
@@ -724,7 +748,3 @@ body.light-mode .contact button {
 body.light-mode .socials a {
   color: #2563eb;
 }
-
-
-
-

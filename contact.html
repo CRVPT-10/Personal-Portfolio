@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="script/styles.css" />
+</head>
+<body>
+  <header class="hero-section">
+    <nav class="nav">
+      <h1 >Chunku Raja Venkata Praney Teja</h1>
+      <div style="display: flex; align-items: center; gap: 20px;">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="toggle-mode" id="themeToggle" onclick="toggleMode()">☀️ Light Mode</button>
+      </div>
+    </nav>
+  </header>
+  
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    
+    <!-- ✅ FormSubmit-enabled form -->
+    <form action="https://formsubmit.co/chunkupraney@gmail.com" method="POST">
+      <!-- Hidden field to disable captcha -->
+      <input type="hidden" name="_captcha" value="false" />
+      
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    
+    <div class="socials">
+      <a href="mailto:chunkupraney@gmail.com">📧 Email</a>
+      <a href="https://github.com/CRVPT-10">💻 GitHub</a>
+      <a href="https://linkedin.com/in/praney-teja-036b7428b">🔗 LinkedIn</a>
+    </div>
+  </section>
+  
+  <footer>
+    &copy; 2025 Chunku Raja Venkata Praney Teja. All rights reserved.
+  </footer>
+  
+  <script src="script/script.js"></script>
+</body>
+</html>
